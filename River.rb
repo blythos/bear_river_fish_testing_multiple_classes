@@ -11,5 +11,8 @@ class River
     return @fishes.size
   end
 
+  def add_fish(fish)
+    @fishes << fish
+  end 
 
 end

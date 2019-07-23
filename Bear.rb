@@ -18,5 +18,8 @@ class Bear
     river.fishes.shift()
   end
 
+  def woof()
+    return "Roar!"
+  end
 
 end

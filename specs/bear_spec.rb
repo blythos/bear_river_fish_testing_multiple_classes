@@ -5,11 +5,15 @@ require_relative("../Bear.rb")
 class BearTest < MiniTest::Test
 
   def setup()
-    @bear = Bear.new("Grizzly")
+    @bear = Bear.new("Yogi", :grizzly)
   end
 
   def test_get_bear_name()
-    assert_equal("Grizzly", @bear.name)
+    assert_equal("Yogi", @bear.name)
+  end
+
+  def test_get_bear_type
+    assert_equal(:grizzly, @bear.type)
   end
 
 end

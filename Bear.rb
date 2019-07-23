@@ -5,12 +5,18 @@ class Bear
   def initialize(name, type)
     @name = name
     @type = type
-    @stomache = []
+    @stomach = []
   end
 
 
   def food_count
-    return @stomache.size
+    return @stomach.size
   end
+
+  def eats_fish(river)
+    @stomach << river.fishes
+    river.fishes.shift()
+  end
+
 
 end

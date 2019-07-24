@@ -1,6 +1,6 @@
 class Bear
 
-  attr_reader :name, :type, :food
+  attr_reader :name, :type
 
   def initialize(name, type)
     @name = name

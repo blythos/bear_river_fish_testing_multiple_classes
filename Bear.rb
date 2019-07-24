@@ -14,8 +14,8 @@ class Bear
   end
 
   def eats_fish(river)
-    @stomach << river.fishes
-    river.fishes.shift()
+    @stomach << river.fish_closest_to_surface()
+    river.remove_top_fish()
   end
 
   def woof()

@@ -1,6 +1,6 @@
 class River
 
-  attr_reader :name, :fishes
+  attr_reader :name
 
   def initialize(name)
     @name = name
@@ -13,6 +13,14 @@ class River
 
   def add_fish(fish)
     @fishes << fish
+  end
+
+  def remove_top_fish()
+    @fishes.shift()
+  end
+
+  def fish_closest_to_surface()
+    return @fishes[0]
   end
 
 end
